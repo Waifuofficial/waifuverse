@@ -1,45 +1,113 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WaifuVerse</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom right, #2c003e, #ff80ab);
-            color: white;
-            text-align: center;
-            padding: 40px;
-        }
-        h1 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 1.3em;
-            margin-top: 10px;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #ff4081;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-        .button:hover {
-            background-color: #e91e63;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WaifuVerse</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3f3f91);
+      color: white;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 12px;
+      background: #ff5f8d;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff2a6d;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    footer {
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media(max-width: 600px) {
+      .buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to WaifuVerse</h1>
-    <p>Your ultimate hub for aesthetic and premium anime content.</p>
-    <a href="https://discord.gg/yourserverlink" class="button">Join our Discord</a>
+
+<header>
+  <div class="logo"><strong>WaifuVerse</strong></div>
+  <nav>
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Mağaza</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">İletişim</a>
+  </nav>
+</header>
+
+<main>
+  <h1>WaifuVerse'e Hoş Geldin!</h1>
+  <p style="text-align:center; max-width: 600px; margin: auto;">
+    Burada hem NSFW (🔞) hem de SFW ✅ anime içerikleri bulacaksın.
+  </p>
+
+  <div class="buttons">
+    <button class="btn">✅ SFW İçerikler</button>
+    <button class="btn">🔞 NSFW İçerikler</button>
+  </div>
+
+  <h2 style="text-align:center;">📷 Son Eklenenler</h2>
+  <div class="gallery">
+    <img src="images/example1.jpg" alt="Waifu 1">
+    <img src="images/example2.jpg" alt="Waifu 2">
+    <img src="images/example3.jpg" alt="Waifu 3">
+    <img src="images/example4.jpg" alt="Waifu 4">
+  </div>
+</main>
+
+<footer>
+  Bize ulaş: 
+  <a href="https://discord.gg/cTjpU2SR" style="color: #ff9edd;">Discord</a> | 
+  <a href="https://www.instagram.com/eroticifsa" style="color: #ff9edd;">Instagram</a> | 
+  <a href="https://x.com/ifsa_global_" style="color: #ff9edd;">X (Twitter)</a>
+</footer>
+
 </body>
 </html>
