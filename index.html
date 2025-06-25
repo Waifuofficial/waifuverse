@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #3f3f91);
+      background: linear-gradient(to bottom right, #1e1e2f, #3f3f91);
       color: white;
     }
     header {
@@ -22,6 +22,7 @@
       color: white;
       margin-left: 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
     h1 {
       text-align: center;
@@ -56,12 +57,18 @@
       width: 100%;
       border-radius: 10px;
       object-fit: cover;
+      height: 250px;
     }
     footer {
       background: rgba(0,0,0,0.5);
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+    }
+    a.social {
+      color: #ff9edd;
+      text-decoration: none;
+      margin: 0 0.5rem;
     }
     @media(max-width: 600px) {
       .buttons {
@@ -95,18 +102,18 @@
 
   <h2 style="text-align:center;">📷 Son Eklenenler</h2>
   <div class="gallery">
-    <img src="images/example1.jpg" alt="Waifu 1">
-    <img src="images/example2.jpg" alt="Waifu 2">
-    <img src="images/example3.jpg" alt="Waifu 3">
-    <img src="images/example4.jpg" alt="Waifu 4">
+    <img src="images/sfw1.jpg" alt="SFW 1">
+    <img src="images/sfw2.jpg" alt="SFW 2">
+    <img src="images/nsfw1.jpg" alt="NSFW 1">
+    <img src="images/nsfw2.jpg" alt="NSFW 2">
   </div>
 </main>
 
 <footer>
   Bize ulaş: 
-  <a href="https://discord.gg/cTjpU2SR" style="color: #ff9edd;">Discord</a> | 
-  <a href="https://www.instagram.com/eroticifsa" style="color: #ff9edd;">Instagram</a> | 
-  <a href="https://x.com/ifsa_global_" style="color: #ff9edd;">X (Twitter)</a>
+  <a href="https://discord.gg/cTjpU2SR" class="social">Discord</a> | 
+  <a href="https://www.instagram.com/eroticifsa" class="social">Instagram</a> | 
+  <a href="https://x.com/ifsa_global_" class="social">X</a>
 </footer>
 
 </body>
