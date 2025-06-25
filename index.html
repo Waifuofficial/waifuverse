@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,113 +7,150 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #1e1e2f, #3f3f91);
+      background: linear-gradient(135deg, #1f1f2e, #3f3f91);
       color: white;
-    }
-    header {
-      background: rgba(0,0,0,0.6);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      color: white;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    .btn {
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 12px;
-      background: #ff5f8d;
-      color: white;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #ff2a6d;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      height: 250px;
-    }
-    footer {
-      background: rgba(0,0,0,0.5);
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    a.social {
-      color: #ff9edd;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-    @media(max-width: 600px) {
-      .buttons {
-        flex-direction: column;
-      }
-    }
+      overflow-x: hidden;
+      position: relative;
+    }header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url('images/banner.jpg'); /* BU GÖRSELİ SEN EKLE */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.no-data-button {
+  padding: 1rem 2rem;
+  background: #ff5f8d;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.description a {
+  color: #ff9edd;
+  text-decoration: underline;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+/* Kar yağışı */
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  animation: fall linear infinite;
+  user-select: none;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+
   </style>
 </head>
-<body>
+<body>  <!-- Kar Taneleri -->  <script>
+    const snowflakes = 30;
+    for (let i = 0; i < snowflakes; i++) {
+      const snow = document.createElement('div');
+      snow.className = 'snowflake';
+      snow.style.left = Math.random() * 100 + 'vw';
+      snow.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      snow.textContent = '❄';
+      document.body.appendChild(snow);
+    }
+  </script>  <header>
+    <div class="logo"><strong>WaifuVerse</strong></div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>  <div class="banner">
+    <h1>Welcome to WaifuVerse!</h1>
+  </div>  <div class="section">
+    <h2>News</h2>
+    <button class="no-data-button">No Data Found</button><div class="description">
+  On this website, you can find both NSFW and SFW anime content. NSFW content is intended for sale purposes and is only obtainable for free through specific events. For all details, please check our <a href="#">About</a> page.
+</div>
 
-<header>
-  <div class="logo"><strong>WaifuVerse</strong></div>
-  <nav>
-    <a href="#">Ana Sayfa</a>
-    <a href="#">Mağaza</a>
-    <a href="#">Hakkımızda</a>
-    <a href="#">İletişim</a>
-  </nav>
-</header>
-
-<main>
-  <h1>WaifuVerse'e Hoş Geldin!</h1>
-  <p style="text-align:center; max-width: 600px; margin: auto;">
-    Burada hem NSFW (🔞) hem de SFW ✅ anime içerikleri bulacaksın.
-  </p>
-
-  <div class="buttons">
-    <button class="btn">✅ SFW İçerikler</button>
-    <button class="btn">🔞 NSFW İçerikler</button>
-  </div>
-
-  <h2 style="text-align:center;">📷 Son Eklenenler</h2>
-  <div class="gallery">
-    <img src="images/sfw1.jpg" alt="SFW 1">
-    <img src="images/sfw2.jpg" alt="SFW 2">
-    <img src="images/nsfw1.jpg" alt="NSFW 1">
-    <img src="images/nsfw2.jpg" alt="NSFW 2">
-  </div>
-</main>
-
-<footer>
-  Bize ulaş: 
-  <a href="https://discord.gg/cTjpU2SR" class="social">Discord</a> | 
-  <a href="https://www.instagram.com/eroticifsa" class="social">Instagram</a> | 
-  <a href="https://x.com/ifsa_global_" class="social">X</a>
-</footer>
-
+  </div>  <footer>
+    Contact us:<br>
+    Discord: <a href="https://discord.gg/S3a94Myyxc" target="_blank">Join</a> |
+    Instagram: <a href="https://www.instagram.com/waifuverseofficial?igsh=bmhza3dpNm93dnF3" target="_blank">Follow</a>
+  </footer>
 </body>
 </html>
