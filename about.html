@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | WaifuVerse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script>
+    const snowflakes = 30;
+    for (let i = 0; i < snowflakes; i++) {
+      const snow = document.createElement('div');
+      snow.className = 'snowflake';
+      snow.style.left = Math.random() * 100 + 'vw';
+      snow.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      snow.textContent = '❄';
+      document.body.appendChild(snow);
+    }
+  </script>
+
+  <header>
+    <div class="logo"><strong>WaifuVerse</strong></div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h1>About WaifuVerse</h1>
+  </div>
+
+  <div class="section">
+    <div class="description">
+      <p>
+        WaifuVerse is a digital platform dedicated to fans of anime culture, blending both SFW (safe for work) and NSFW (not safe for work) content in a responsible and aesthetic way. Our goal is to deliver carefully curated packs and media that appeal to all types of anime enthusiasts.
+      </p>
+      <p>
+        NSFW content on our site is strictly offered through premium access or limited-time events, and is only available to users who are 18 years or older. We emphasize privacy, community standards, and creative freedom. Our staff regularly moderates content to maintain quality and user trust.
+      </p>
+      <p>
+        Our store is updated frequently, and we are actively working to add features like member-exclusive drops, event-based giveaways, and more. Check our store regularly and follow us on social media for updates.
+      </p>
+    </div>
+  </div>
+
+  <footer id="contact">
+    Contact us:<br>
+    Discord: <a href="https://discord.gg/S3a94Myyxc" target="_blank">Join</a> |
+    Instagram: <a href="https://www.instagram.com/waifuverseofficial?igsh=bmhza3dpNm93dnF3" target="_blank">Follow</a>
+  </footer>
+</body>
+</html>
