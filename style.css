@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f06292, #80deea); /* Pembe + cam göbeği */
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: rgba(0,0,0,0.3);
+}
+.menu-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#menu {
+    display: none;
+    flex-direction: column;
+}
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5em 0;
+}
+#menu.show {
+    display: flex;
+}
+.banner {
+    text-align: center;
+    padding: 2em;
+}
+.rgb-title {
+    font-size: 2em;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 5s infinite linear;
+}
+@keyframes hue {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+.news, .description, .faq-button {
+    text-align: center;
+    padding: 1em;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background: rgba(0,0,0,0.3);
+}
+.faq-icon {
+    width: 20px;
+    margin-right: 0.5em;
+}
