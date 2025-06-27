@@ -66,7 +66,7 @@ body, html {
 
 .main-button:hover {
     transform: scale(1.1);
-    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    background: linear-gradient(45deg, #a200ff, #ff00dd);
 }
 
 .small-buttons {
