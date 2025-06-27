@@ -54,7 +54,7 @@ body, html {
 .main-button {
     padding: 15px 40px;
     font-size: 1.2em;
-    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    background: linear-gradient(45deg, #a200ff, #ff00dd);
     color: white;
     border: none;
     border-radius: 12px;
